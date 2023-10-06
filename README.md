@@ -17,7 +17,7 @@ Utilizando o Vagrant, cada integrante do grupo deve criar uma VM e implementar, 
 
 ## Passos a Seguir
 
-- [ ] Criar um repositório no GitHub com o nome "hardening-servidores".
+- [X] Criar um repositório no GitHub com o nome "hardening-servidores".
 - [X] Criar um arquivo README.md com as informações do trabalho.
 - [X] Criar um arquivo Vagrantfile com as configurações para iniciar as 3 VMs.
 - [X] Criar um arquivo de provisionamento para cada VM.
@@ -42,7 +42,7 @@ Utilizamos o Vagrant para criar e provisionar três VMs simulando um ambiente re
 
 **Tentar Acessar via navegador o Servidor Web 1**
 
-    Abrir o navegador e digitar o endereço: http://192.168.50.10
+    Abrir o navegador e digitar o endereço: http://192.168.56.10
     Como o host é o criador das VMs, ele deve conseguir acessar o servidor web.
 
 **Acessar o Servidor Web 1 e verificar se o nginx está disponível e o firewall ativo**
@@ -55,13 +55,13 @@ Utilizamos o Vagrant para criar e provisionar três VMs simulando um ambiente re
 
     vagrant ssh vm2
     sudo ufw status
-    curl 192.168.50.10
+    curl 192.168.56.10
 
 **Acessar o Servidor usando a VM 3 e ver o resultado do escaneamento**
 
     vagrant ssh vm3
     sudo ufw status
-    curl 192.168.50.10
+    curl 192.168.56.10
     cat /tmp/nmap_vuln_scan.txt
     
        
