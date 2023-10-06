@@ -25,6 +25,6 @@ sudo apt-get install nmap -y
 echo "Ferramentas de escaneamento instaladas."
 
 # Escanear por vulnerabilidades na VM1
-nmap -sV --script=default,vuln 192.168.50.10 > /tmp/nmap_vuln_scan.txt
+nmap -sV --script=default,vuln 192.168.56.10 > /tmp/nmap_vuln_scan.txt
 
 echo "Escaneamento de vulnerabilidades concluído."

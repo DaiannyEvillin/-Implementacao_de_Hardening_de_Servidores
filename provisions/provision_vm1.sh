@@ -27,7 +27,7 @@ sudo systemctl start nginx
 
 # 5. Configuração do TCPWrapper
 # Permitindo acesso ao nginx apenas da faixa de IP "192.168.50."
-echo "nginx: 192.168.50." | sudo tee -a /etc/hosts.allow
+echo "nginx: 192.168.56." | sudo tee -a /etc/hosts.allow
 echo "nginx: ALL" | sudo tee -a /etc/hosts.deny
 
 # 6. Desabilitar Acesso Root por SSH

@@ -27,13 +27,13 @@ echo "Ferramentas de análise instaladas."
 echo "Tentando acessar o servidor web da VM1..."
 
 # Tentativa de acesso ao servidor web da VM1
-curl http://192.168.50.10 > /tmp/vm1_response.html
+curl http://192.168.56.10 > /tmp/vm1_response.html
 
 echo "Acesso ao servidor web da VM1 concluído."
 
 echo "Escanear portas abertas na VM1..."
 
 # Escanear portas abertas na VM1
-nmap 192.168.50.10 > /tmp/nmap_scan.txt
+nmap 192.168.56.10 > /tmp/nmap_scan.txt
 
 echo "Escanemento de portas concluído."
